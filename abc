@@ -3,33 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package javaapplication356;
+package rpg;
 
 import java.util.Scanner;
-public class JavaApplication356 {
-
-    
+public class NewClass1 {
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
-        int input;
-    while ((input = InputHandler.getInt()) != 1 && input != 2) {
-        if (input == InputHandler.CODE_ERROR)
-            System.out.print("Input must be a number");
-    }
-    }
-        public static class InputHandler {
-    public static Scanner in = new Scanner(System.in);
-    public static int CODE_ERROR = -6;
-
-    public static int getInt(){
-      try{
-          return in.nextInt();
-      } catch(Exception e){
-          in.next();  // <------------------ this should solve it
-          return CODE_ERROR;
-      }
-    }
-        /*boolean x = true;
+       
+        boolean x = true;
         int result;
         
         do{
@@ -108,36 +89,43 @@ public class JavaApplication356 {
         catch (NullPointerException npe){
             System.out.println("");
             System.out.println("ERROR===== "+npe);
+            sc.next();
         }
         catch (NumberFormatException nfe){
             System.out.println("");
             System.out.println("ERROR===== "+nfe);
+            sc.next();
         }
         
         catch (ArrayIndexOutOfBoundsException array){
             System.out.println("");
             System.out.println("ERROR===== "+array);
+            sc.next();
         }
         catch (ArithmeticException ar){
             System.out.println("");
             System.out.println("ERROR===== "+ar);
+            sc.next();
         }
         catch (ArrayStoreException ase){
             System.out.println("");
             System.out.println("ERROR===== "+ase);
+            sc.next();
         }
         catch (IndexOutOfBoundsException we){
             System.out.println("");
             System.out.println("ERROR===== "+we);
+            sc.next();
         }
         catch (IllegalArgumentException wer){
             System.out.println("");
             System.out.println("ERROR===== "+wer);
+            sc.next();
         }
         catch (Exception e ){
             System.out.println("");
             System.out.println("ERROR===== "+e);
-            first.next();
+            sc.next();
         }
         finally{
             System.out.println("");
@@ -146,7 +134,7 @@ public class JavaApplication356 {
             
         }
         
-        }while( x==true);*/
+        }while( x==true);
     
     
     }
