@@ -1,0 +1,85 @@
+package binarysearchtree;
+import java.io.*;
+public class BinarySearchTrees {
+    static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    static BinaryTree tree = new BinaryTree();
+    public static void main(String[] args)throws IOException {
+        System.out.print("Intended Input\n"
+                       + "[1]1D Array\n"
+                       + "[2]Traversal\n"
+                       + "Choice: ");
+        short choice = Short.parseShort(br.readLine());
+        
+        switch(choice){
+            case 1:
+                arrToTraversal();
+                break;
+            case 2:
+                traversalToArr();
+                break;
+            default:
+                break;
+        }
+    }
+    public static void arrToTraversal()throws IOException{
+        System.out.print("Input array size: ");
+        int[] arr = new int[Integer.parseInt(br.readLine())];
+        
+        for(int i = 0; i < arr.length; i++){
+            System.out.print("Input data for array["+i+"]:");
+            String val1 = br.readLine();
+            int val = 0;
+            try{
+                val = Integer.parseInt(val1);
+                if(val > -1){
+                arr[i] = val;
+                tree.insert(val);
+                }else{
+                }
+            }catch(Exception e){
+            
+            }
+            
+        }
+        System.out.println("Pre-order Traversal");
+        tree.printPreorder();
+        System.out.println("");
+        
+        System.out.println("In-order Traversal");
+        tree.printInorder();
+        System.out.println("");
+        
+        System.out.println("Post-order Traversal");
+        tree.printPostorder();
+        System.out.println("");
+    }
+    
+    public static void traversalToArr()throws IOException{
+        System.out.print("Input PreOrder size: ");
+        int[] arr = new int[Integer.parseInt(br.readLine())];
+        
+        for(int i = 0; i < arr.length; i++){
+            System.out.print("Input data for array["+i+"]:");
+            String val1 = br.readLine();
+            int val = 0;
+            try{
+                val = Integer.parseInt(val1);
+                if(val > -1){
+                arr[i] = val;
+                tree.insert(val);
+                }else{
+                }
+            }catch(Exception e){
+            
+            }
+            
+        }
+        System.out.println("Constructed tree id array representation order");
+        tree.printInorder();
+        System.out.println("");
+        
+        
+        
+    }
+    
+}
