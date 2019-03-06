@@ -1,0 +1,55 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package binarysearchtree;
+
+import javax.swing.*;
+import java.awt.*;
+
+public class GUIDemo extends Panel{
+    GUIDemo(){
+        this.setBackground(Color.darkGray);
+    }
+    public static void main(String[] args) {
+        GUIDemo demo = new GUIDemo();
+        JFrame frame = new JFrame("Gui Demo");
+        frame.setSize(800,800); //size
+        frame.setVisible(true); //para mag appear xD 
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //para maclose yung app? xD
+//        frame.setResizable(true); //if you want to resize
+        GUIDemo gui = new GUIDemo();
+        frame.add(gui);
+        
+    }
+    @Override
+    public void paint(Graphics g){
+        g.setColor(Color.black); //right ear
+        g.fillOval(195, 85, 80, 80);
+        
+        g.setColor(Color.white);
+        g.fillOval(200, 50, 50, 50);
+        
+        g.setColor(Color.blue);
+        g.fillOval(100, 100, 150, 150);
+        
+        g.setColor(Color.white); //right
+        g.fillOval(120, 140, 50, 25);
+        
+        g.setColor(Color.white); //left
+        g.fillOval(180, 140, 50, 25);
+        
+        g.setColor(Color.black); //right
+        g.fillOval(147, 142, 20, 20);
+        
+//        g.setColor(Color.black); //left
+        g.fillOval(207, 142, 20, 20);
+        
+        g.setColor(Color.white);
+        g.fillOval(150, 192, 50, 30);
+//        g.fillPolygon(new int[] {175, 140, 205}, new int[] {150, 200, 200}, 3);
+        
+        
+    }
+}
