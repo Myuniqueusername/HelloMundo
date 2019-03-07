@@ -1,0 +1,103 @@
+
+import java.util.Scanner;
+public class BinaryTree {
+
+    private int data;
+    private BinaryTree left;
+    private BinaryTree right;
+    public BinaryTree(int num) {
+        this.data = num;
+        this.left = null;
+        this.right = null;
+    }
+// As a convention, if the key to be inserted is less than the key of root node, then key is inserted in
+// left sub-tree; If key is greater, it is inserted in right sub-tree. If it is equal, as a convention, it 
+// is inserted in right sub-tree
+
+    public void addNode(int num) {
+        if (num < this.data) {
+            if (this.left != null) {
+                this.left.addNode(num);
+            } else {
+                this.left = new BinaryTree(num);
+				
+            }
+
+        } else if (this.right != null) {
+            this.right.addNode(num);
+        } else {
+            this.right = new BinaryTree(num);
+			
+        }
+    }
+// Visit the node first, then left and right sub-trees
+
+    public void traversePreOrder() {
+        System.out.print(this.data + " ");
+        if (this.left != null) {
+            this.left.traversePreOrder();
+        }
+        if (this.right != null) {
+            this.right.traversePreOrder();
+        }
+		
+		
+    }
+// Visit left sub-tree, then node and then, right sub-tree
+
+    public void traverseInOrder() {
+        if (this.left != null) {
+            this.left.traverseInOrder();
+        }
+        System.out.print(this.data + " ");
+        if (this.right != null) {
+            this.right.traverseInOrder();
+        }
+		
+		
+    }
+// Visit left sub-tree, then right sub-tree and then the node
+
+    public void traversePostOrder() {
+        if (this.left != null) {
+            this.left.traversePostOrder();
+        }
+        if (this.right != null) {
+            this.right.traversePostOrder();
+        }
+        System.out.print(this.data + " ");
+		
+		
+    }
+	
+	
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter root: ");
+        int root = sc.nextInt();
+        System.out.println("Enter size: ");
+        int s = sc.nextInt();
+        int arr[] = new int[s];
+        System.out.println("Enter elements: ");
+        for (int i = 0; i < s; i++){
+            arr[i] = sc.nextInt();
+        }
+        
+        BinaryTree tree = new BinaryTree(root);
+        //int[] nums = {3, 4, 12, 14, 10, 5, 1, 8, 2, 7, 9, 11, 6, 18};
+        for (int i : arr) {
+            tree.addNode(i);
+        }
+		System.out.print("Pre order:  ");
+        tree.traversePreOrder();
+        System.out.println("");
+		System.out.print("In order:   ");
+        tree.traverseInOrder();
+        System.out.println("");
+		System.out.print("Post order: ");
+        tree.traversePostOrder();
+        System.out.println("");
+		
+    }
+	
+}
