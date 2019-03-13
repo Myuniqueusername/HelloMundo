@@ -20,13 +20,7 @@ public class GUID extends Panel {
     @Override
         public void paint(Graphics g){
             
-            g.setColor(Color.black);
-            g.fillRect(90,80,10,10);
-            g.fillRect(90,90,10,10);
-            g.fillRect(90,100,10,10);
-            
-            g.fillRect(100,70,10,10);
-            g.fillRect(100,110,10,10);
+
             g.setColor(Color.orange);
             g.fillRect(100,80,10,10);
             g.fillRect(100,90,10,10);
@@ -34,20 +28,6 @@ public class GUID extends Panel {
             for ( int z = 70; z<=110; z += 10){
                    g.fillRect(110,z,10,10); 
             }
-            /*g.fillRect(110,70,10,10);
-            g.fillRect(110,80,10,10);
-            g.fillRect(110,90,10,10);
-            g.fillRect(110,100,10,10);
-            g.fillRect(110,110,10,10);*/
-            
-            
-            
-           
-            
-            
-            //g.fillRect(110,40,10,10);
-            
-            g.setColor(Color.orange);
             g.fillRect(120,50,10,10);
             g.fillRect(120,60,10,10);
             g.fillRect(120,70,10,10);
@@ -65,7 +45,12 @@ public class GUID extends Panel {
             g.fillRect(130,110,10,10);
             g.fillRect(130,120,10,10);
             
-            g.setColor(Color.black);
+             g.setColor(Color.black);
+                        for ( int t = 80; t<=100; t += 10){
+                   g.fillRect(90,t,10,10); }
+
+            g.fillRect(100,70,10,10);
+            g.fillRect(100,110,10,10);
             g.fillRect(130,30,10,10);
             g.fillRect(120,40,10,10);
             g.fillRect(130,130,10,10);
@@ -92,7 +77,6 @@ public class GUID extends Panel {
             g.fillRect(170,40,10,10);
             g.fillRect(170,130,10,10);
             g.fillRect(170,140,10,10);
-//            g.fillRect(170,150,10,10);
             g.fillRect(170,180,10,10);
             g.fillRect(180,50,10,10);
             g.fillRect(180,60,10,10);
@@ -106,7 +90,7 @@ public class GUID extends Panel {
             g.fillRect(190,180,10,10);
             g.fillRect(190,190,10,10);
             g.fillRect(190,200,10,10);
-            g.fillRect(190,120,10,10); //here
+            g.fillRect(190,120,10,10); 
             g.fillRect(190,130,10,10);
             g.fillRect(200,90,10,10);
             g.fillRect(200,100,10,10);
@@ -115,7 +99,7 @@ public class GUID extends Panel {
             g.fillRect(210,180,10,10);
             g.fillRect(210,190,10,10);
             g.fillRect(210,200,10,10);
-            //g.fillRect(220,110,10,10);
+
             g.fillRect(220,120,10,10);
             g.fillRect(220,130,10,10);
             g.fillRect(220,170,10,10);
@@ -125,11 +109,7 @@ public class GUID extends Panel {
             for ( int a = 130; a<=170; a += 10){
                    g.fillRect(230,a,10,10); 
             }
-//            g.fillRect(230,130,10,10);
-//            g.fillRect(230,140,10,10);
-//            g.fillRect(230,150,10,10);
-//            g.fillRect(230,160,10,10);
-//            g.fillRect(230,170,10,10);
+
 
             
             g.fillRect(240,70,10,10);
@@ -154,11 +134,11 @@ public class GUID extends Panel {
             g.fillRect(280,60,10,10);
             g.fillRect(280,100,10,10);
             
-            //for (int x = 290; x<300;x += 10){
+
                 for ( int y = 70; y<=90; y += 10){
                    g.fillRect(290,y,10,10); 
                 }
-            //}
+
             
             
             
@@ -168,89 +148,41 @@ public class GUID extends Panel {
             for ( int j = 40; j<=70; j += 10){
                    g.fillRect(140,j,10,10); 
             }
-           /* g.fillRect(140,40,10,10);
-            g.fillRect(140,50,10,10);
-            g.fillRect(140,60,10,10);
-            g.fillRect(140,70,10,10);*/
+
             g.fillRect(140,110,10,10);
             g.fillRect(140,120,10,10);
             
             for ( int k = 40; k<=70; k += 10){
                    g.fillRect(150,k,10,10); 
             }
-            /*g.fillRect(150,40,10,10);
-            g.fillRect(150,50,10,10);
-            g.fillRect(150,60,10,10);
-            g.fillRect(150,70,10,10);*/
+
             g.fillRect(150,110,10,10);
             g.fillRect(150,120,10,10);
             
             for ( int f = 40; f<=130; f += 10){
                    g.fillRect(160,f,10,10); 
             }
-            /*g.fillRect(160,40,10,10);
-            g.fillRect(160,50,10,10);
-            g.fillRect(160,60,10,10);
-            g.fillRect(160,70,10,10);
-            g.fillRect(160,80,10,10);
-            g.fillRect(160,90,10,10);
-            g.fillRect(160,100,10,10);
-            g.fillRect(160,110,10,10);
-            g.fillRect(160,120,10,10);
-            g.fillRect(160,130,10,10);*/
+
             for ( int h = 50; h<=130; h += 10){
                    g.fillRect(170,h,10,10); 
             }
-            /*g.fillRect(170,50,10,10);
-            g.fillRect(170,60,10,10);
-            g.fillRect(170,70,10,10);
-            g.fillRect(170,80,10,10);
-            g.fillRect(170,90,10,10);
-            g.fillRect(170,100,10,10);
-            g.fillRect(170,110,10,10);
-            g.fillRect(170,120,10,10);
-            g.fillRect(170,130,10,10);*/
+
             for ( int i = 70; i<=120; i += 10){
                    g.fillRect(180,i,10,10);  }
-            /*g.fillRect(180,70,10,10);
-            g.fillRect(180,80,10,10);
-            g.fillRect(180,90,10,10);
-            g.fillRect(180,100,10,10);
-            g.fillRect(180,110,10,10);
-            g.fillRect(180,120,10,10);*/
+
             g.fillRect(180,140,10,10);
             for ( int d = 90; d<=170; d += 10){
                    g.fillRect(190,d,10,10); 
             }
-            /*g.fillRect(190,90,10,10);
-            g.fillRect(190,100,10,10);
-            g.fillRect(190,110,10,10);
-            g.fillRect(190,120,10,10);
-            g.fillRect(190,130,10,10);
-            g.fillRect(190,140,10,10);
-            g.fillRect(190,160,10,10);
-            g.fillRect(190,170,10,10); */
+
             for ( int b = 110; b<=190; b += 10){
                    g.fillRect(200,b,10,10); 
             }
-//            g.fillRect(200,110,10,10);
-//            g.fillRect(200,120,10,10);
-//            g.fillRect(200,130,10,10);
-//            g.fillRect(200,140,10,10);
-//            g.fillRect(200,150,10,10);
-//            g.fillRect(200,160,10,10);
-//            g.fillRect(200,170,10,10);
-//            g.fillRect(200,180,10,10);
-//            g.fillRect(200,190,10,10);
+
             for ( int c = 120; c<=170; c += 10){
                    g.fillRect(210,c,10,10); 
             }
-            /*g.fillRect(210,120,10,10);
-            g.fillRect(210,130,10,10);
-            g.fillRect(210,140,10,10);
-            g.fillRect(210,150,10,10);
-            g.fillRect(210,160,10,10);
-            g.fillRect(210,170,10,10);*/
+
             
             g.fillRect(220,140,10,10);//
             g.fillRect(220,150,10,10);
@@ -291,10 +223,7 @@ public class GUID extends Panel {
             for ( int l = 40; l<=70; l += 10){
                    g.fillRect(260,l,10,10); 
             }
-            /*g.fillRect(260,40,10,10);
-            g.fillRect(260,50,10,10);
-            g.fillRect(260,60,10,10);
-            g.fillRect(260,70,10,10);*/
+
             g.fillRect(270,50,10,10);
             g.fillRect(270,60,10,10);
             g.fillRect(280,70,10,10);
@@ -306,5 +235,4 @@ public class GUID extends Panel {
                     
             
     }
-}
 }
