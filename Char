@@ -40,15 +40,13 @@ public class GUID extends Panel {
             g.fillRect(110,100,10,10);
             g.fillRect(110,110,10,10);*/
             
-            g.setColor(Color.black);
-            g.fillRect(110,50,10,10);
-            g.fillRect(110,60,10,10);
-            g.fillRect(110,120,10,10);
+            
+            
            
             
             
             //g.fillRect(110,40,10,10);
-            g.fillRect(120,120,10,10);
+            
             g.setColor(Color.orange);
             g.fillRect(120,50,10,10);
             g.fillRect(120,60,10,10);
@@ -57,12 +55,6 @@ public class GUID extends Panel {
             g.fillRect(120,90,10,10);
             g.fillRect(120,100,10,10);
             g.fillRect(120,110,10,10);
-            
-            g.setColor(Color.black);
-            g.fillRect(130,30,10,10);
-            g.fillRect(120,40,10,10);
-            g.fillRect(130,130,10,10);
-            g.setColor(Color.orange);
             g.fillRect(130,40,10,10);
             g.fillRect(130,50,10,10);
             g.fillRect(130,60,10,10);
@@ -74,6 +66,13 @@ public class GUID extends Panel {
             g.fillRect(130,120,10,10);
             
             g.setColor(Color.black);
+            g.fillRect(130,30,10,10);
+            g.fillRect(120,40,10,10);
+            g.fillRect(130,130,10,10);
+            g.fillRect(120,120,10,10);
+            g.fillRect(110,50,10,10);
+            g.fillRect(110,60,10,10);
+            g.fillRect(110,120,10,10);
             g.fillRect(140,30,10,10);
             g.fillRect(140,90,10,10);
             g.fillRect(140,100,10,10);
@@ -91,7 +90,9 @@ public class GUID extends Panel {
             g.fillRect(160,30,10,10);
             g.fillRect(160,170,10,10);
             g.fillRect(170,40,10,10);
+            g.fillRect(170,130,10,10);
             g.fillRect(170,140,10,10);
+//            g.fillRect(170,150,10,10);
             g.fillRect(170,180,10,10);
             g.fillRect(180,50,10,10);
             g.fillRect(180,60,10,10);
@@ -129,6 +130,7 @@ public class GUID extends Panel {
 //            g.fillRect(230,150,10,10);
 //            g.fillRect(230,160,10,10);
 //            g.fillRect(230,170,10,10);
+
             
             g.fillRect(240,70,10,10);
             g.fillRect(240,80,10,10);
@@ -208,7 +210,7 @@ public class GUID extends Panel {
             g.fillRect(170,110,10,10);
             g.fillRect(170,120,10,10);
             g.fillRect(170,130,10,10);*/
-            for ( int i = 70; i<=140; i += 10){
+            for ( int i = 70; i<=120; i += 10){
                    g.fillRect(180,i,10,10);  }
             /*g.fillRect(180,70,10,10);
             g.fillRect(180,80,10,10);
