@@ -1,0 +1,178 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package guidemo;
+
+import javax.swing.*;
+import java.awt.*;
+public class GUIDemo extends Panel {
+    GUIDemo()   { 
+    this.setBackground(new Color(248, 249,239));
+    }
+    public static void main(String[] args) {
+        JFrame frame = new JFrame ("Charmander the Dragon");
+        frame.setVisible(true);
+        frame.setSize(740,441);
+        
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        GUIDemo gui = new GUIDemo();
+        frame.add(gui);
+        
+    }
+    
+    @Override
+        public void paint(Graphics g){
+            
+            g.setColor(Color.black);
+            g.fillRect(90,80,10,10);
+            g.fillRect(90,90,10,10);
+            g.fillRect(90,100,10,10);
+            
+            g.fillRect(100,70,10,10);
+            g.fillRect(100,110,10,10);
+            g.setColor(Color.orange);
+            g.fillRect(100,80,10,10);
+            g.fillRect(100,90,10,10);
+            g.fillRect(100,100,10,10);
+            
+            g.setColor(Color.black);
+            g.fillRect(110,50,10,10);
+            g.fillRect(110,60,10,10);
+            g.setColor(Color.orange);
+            g.fillRect(110,70,10,10);
+            g.fillRect(110,80,10,10);
+            g.fillRect(110,90,10,10);
+            g.fillRect(110,100,10,10);
+            g.fillRect(110,110,10,10);
+            g.setColor(Color.black);
+            g.fillRect(110,120,10,10);
+            
+            g.fillRect(110,40,10,10);
+            g.fillRect(120,120,10,10);
+            g.setColor(Color.orange);
+            g.fillRect(120,50,10,10);
+            g.fillRect(120,60,10,10);
+            g.fillRect(120,70,10,10);
+            g.fillRect(120,80,10,10);
+            g.fillRect(120,90,10,10);
+            g.fillRect(120,100,10,10);
+            g.fillRect(120,110,10,10);
+            
+            g.setColor(Color.black);
+            g.fillRect(130,30,10,10);
+            g.fillRect(130,130,10,10);
+            g.setColor(Color.orange);
+            g.fillRect(130,40,10,10);
+            g.fillRect(130,50,10,10);
+            g.fillRect(130,60,10,10);
+            g.fillRect(130,70,10,10);
+            g.fillRect(130,80,10,10);
+            g.fillRect(130,90,10,10);
+            g.fillRect(130,100,10,10);
+            g.fillRect(130,110,10,10);
+            g.fillRect(130,120,10,10);
+            
+            g.setColor(Color.black);
+            g.fillRect(140,30,10,10);
+            g.fillRect(140,90,10,10);
+            g.fillRect(140,100,10,10);
+            g.fillRect(140,130,10,10);
+            g.fillRect(140,140,10,10);
+            g.fillRect(140,150,10,10);
+            g.fillRect(140,170,10,10);
+            g.fillRect(150,30,10,10);
+            g.fillRect(150,80,10,10);
+            g.fillRect(150,90,10,10);
+            g.fillRect(150,100,10,10);
+            g.fillRect(150,130,10,10);
+            g.fillRect(150,160,10,10);
+            g.fillRect(150,170,10,10);
+            g.fillRect(160,30,10,10);
+            g.fillRect(160,170,10,10);
+            g.fillRect(170,40,10,10);
+            g.fillRect(170,140,10,10);
+            g.fillRect(170,180,10,10);
+            g.fillRect(180,50,10,10);
+            g.fillRect(180,60,10,10);
+            g.fillRect(180,130,10,10);
+            g.fillRect(180,150,10,10);
+            g.fillRect(180,180,10,10);
+            g.fillRect(180,190,10,10);
+            g.fillRect(190,70,10,10);
+            g.fillRect(190,80,10,10);
+            g.fillRect(190,150,10,10);
+            
+            g.setColor(Color.orange);
+            g.fillRect(140,40,10,10);
+            g.fillRect(140,50,10,10);
+            g.fillRect(140,60,10,10);
+            g.fillRect(140,70,10,10);
+            g.fillRect(140,110,10,10);
+            g.fillRect(140,120,10,10);
+            g.fillRect(150,40,10,10);
+            g.fillRect(150,50,10,10);
+            g.fillRect(150,60,10,10);
+            g.fillRect(150,70,10,10);
+            g.fillRect(150,110,10,10);
+            g.fillRect(150,120,10,10);
+            g.fillRect(160,40,10,10);
+            g.fillRect(160,50,10,10);
+            g.fillRect(160,60,10,10);
+            g.fillRect(160,70,10,10);
+            g.fillRect(160,80,10,10);
+            g.fillRect(160,90,10,10);
+            g.fillRect(160,100,10,10);
+            g.fillRect(160,110,10,10);
+            g.fillRect(160,120,10,10);
+            g.fillRect(160,130,10,10);
+            g.fillRect(170,50,10,10);
+            g.fillRect(170,60,10,10);
+            g.fillRect(170,70,10,10);
+            g.fillRect(170,80,10,10);
+            g.fillRect(170,90,10,10);
+            g.fillRect(170,100,10,10);
+            g.fillRect(170,110,10,10);
+            g.fillRect(170,120,10,10);
+            g.fillRect(170,130,10,10);
+            g.fillRect(180,70,10,10);
+            g.fillRect(180,80,10,10);
+            g.fillRect(180,90,10,10);
+            g.fillRect(180,100,10,10);
+            g.fillRect(180,110,10,10);
+            g.fillRect(180,120,10,10);
+            g.fillRect(180,140,10,10);
+            g.fillRect(190,90,10,10);
+            g.fillRect(190,100,10,10);
+            g.fillRect(190,110,10,10);
+            g.fillRect(190,120,10,10);
+            g.fillRect(190,130,10,10);
+            g.fillRect(190,140,10,10);
+            g.fillRect(190,160,10,10);
+            g.fillRect(190,170,10,10);
+            
+            g.setColor(Color.yellow);
+            g.fillRect(150,140,10,10);
+            g.fillRect(150,150,10,10);
+            g.fillRect(160,140,10,10);
+            g.fillRect(160,150,10,10);
+            g.fillRect(160,160,10,10);
+            g.fillRect(170,150,10,10);
+            g.fillRect(170,160,10,10);
+            g.fillRect(170,170,10,10);
+            g.fillRect(180,160,10,10);
+            g.fillRect(180,170,10,10);
+            
+            
+            
+            
+            
+
+            
+                    
+            
+    }
+}
+    
+
