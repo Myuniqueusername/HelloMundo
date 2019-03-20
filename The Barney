@@ -1,0 +1,321 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package gui1;
+
+import static gui1.Activity8.name;
+import static gui1.GraphicsDemo2.name;
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+
+public class GUI2 extends JFrame implements KeyListener{
+    int x = 0;
+    int y = 0;
+    static String name = "";
+    static Color col = Color.white;
+    static JTextField test;
+    static Color colo = Color.white;
+    
+    
+    GUI2(){
+        super.setTitle("The Title");
+        super.setSize(500,500);
+        super.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        super.addKeyListener(this);
+    }
+    public static void main(String[] args) {
+        GUI2 frame = new GUI2();
+        frame.setVisible(true);
+name = JOptionPane.showInputDialog(null, "What is your characters name: ", "Knight", JOptionPane.PLAIN_MESSAGE);
+        String[] col1 = new String[5];
+        //Body
+        col1[0] = "Cyan";
+        col1[1] = "Magenta";
+        col1[2] = "Green";
+        col1[3] = "Yellow";
+        col1[4] = "Orange";
+        Object col = JOptionPane.showInputDialog(null, "Choose color for the body", "Color Selection", JOptionPane.QUESTION_MESSAGE, null, col1, "Red");
+        if (col.equals("Cyan")) {
+            GUI2.col = Color.cyan;
+        } else if (col.equals("Magenta")) {
+            GUI2.col = Color.magenta;
+        } else if (col.equals("Green")) {
+            GUI2.col = Color.GREEN;
+        } else if (col.equals("Yellow")) {
+            GUI2.col = Color.YELLOW;
+        } else if (col.equals("Orange")) {
+            GUI2.col = Color.orange;
+        }
+        //Stomach
+        col1[0] = "Cyan";
+        col1[1] = "Magenta";
+        col1[2] = "Green";
+        col1[3] = "Yellow";
+        col1[4] = "Orange";
+        Object colo = JOptionPane.showInputDialog(null, "Choose color for the stomach", "Color Selection", JOptionPane.QUESTION_MESSAGE, null, col1, "Cyan");
+        if (colo.equals("Cyan")) {
+            GUI2.colo = Color.cyan;
+        } else if (colo.equals("Magenta")) {
+            GUI2.colo = Color.magenta;
+        } else if (colo.equals("Green")) {
+            GUI2.colo = Color.GREEN;
+        } else if (colo.equals("Yellow")) {
+            GUI2.colo = Color.YELLOW;
+        } else if (colo.equals("Orange")) {
+            GUI2.colo = Color.orange;
+        }
+        
+    }
+    
+    @Override
+        public void paint(Graphics g){
+           super.paint(g);
+           
+           g.setFont(new Font("Forte", Font.PLAIN, 30));
+           g.drawString(name, 330, getWidth() / 2 + 150);
+
+            g.setColor(Color.black);
+                        for ( int t = 80; t<=100; t += 10){
+                   g.fillRect(90+x,t+y,10,10); }
+
+            g.fillRect(100+x,70+y,10,10);
+            g.fillRect(100+x,110+y,10,10);
+            g.fillRect(130+x,30+y,10,10);
+            g.fillRect(120+x,40+y,10,10);
+            g.fillRect(130+x,130+y,10,10);
+            g.fillRect(120+x,120+y,10,10);
+            g.fillRect(110+x,50+y,10,10);
+            g.fillRect(110+x,60+y,10,10);
+            g.fillRect(110+x,120+y,10,10);
+            g.fillRect(140+x,30+y,10,10);
+            g.fillRect(140+x,90+y,10,10);
+            g.fillRect(140+x,100+y,10,10);
+            g.fillRect(140+x,130+y,10,10);
+            g.fillRect(140+x,140+y,10,10);
+            g.fillRect(140+x,150+y,10,10);
+            g.fillRect(140+x,170+y,10,10);
+            g.fillRect(150+x,30+y,10,10);
+            g.fillRect(150+x,80+y,10,10);
+            g.fillRect(150+x,90+y,10,10);
+            g.fillRect(150+x,100+y,10,10);
+            g.fillRect(150+x,130+y,10,10);
+            g.fillRect(150+x,160+y,10,10);
+            g.fillRect(150+x,170+y,10,10);
+            g.fillRect(160+x,30+y,10,10);
+            g.fillRect(160+x,170+y,10,10);
+            g.fillRect(170+x,40+y,10,10);
+            g.fillRect(170+x,130+y,10,10);
+            g.fillRect(170+x,140+y,10,10);
+            g.fillRect(170+x,180+y,10,10);
+            g.fillRect(180+x,50+y,10,10);
+            g.fillRect(180+x,60+y,10,10);
+            g.fillRect(180+x,130+y,10,10);
+            g.fillRect(180+x,150+y,10,10);
+            g.fillRect(180+x,180+y,10,10);
+            g.fillRect(180+x,190+y,10,10);
+            g.fillRect(190+x,70+y,10,10);
+            g.fillRect(190+x,80+y,10,10);
+            g.fillRect(190+x,150+y,10,10);
+            g.fillRect(190+x,180+y,10,10);
+            g.fillRect(190+x,190+y,10,10);
+            g.fillRect(190+x,200+y,10,10);
+            g.fillRect(190+x,120+y,10,10); 
+            g.fillRect(190+x,130+y,10,10);
+            g.fillRect(200+x,90+y,10,10);
+            g.fillRect(200+x,100+y,10,10);
+            g.fillRect(200+x,200+y,10,10);
+            g.fillRect(210+x,110+y,10,10);
+            g.fillRect(210+x,180+y,10,10);
+            g.fillRect(210+x,190+y,10,10);
+            g.fillRect(210+x,200+y,10,10);
+
+            g.fillRect(220+x,120+y,10,10);
+            g.fillRect(220+x,130+y,10,10);
+            g.fillRect(220+x,170+y,10,10);
+            g.fillRect(220+x,180+y,10,10);
+            g.fillRect(220+x,190+y,10,10);
+            
+            for ( int a = 130; a<=170; a += 10){
+                   g.fillRect(230+x,a+y,10,10); 
+            }
+
+
+            
+            g.fillRect(240+x,70+y,10,10);
+            g.fillRect(240+x,80+y,10,10);
+            g.fillRect(240+x,90+y,10,10);
+            g.fillRect(240+x,120+y,10,10);
+            g.fillRect(240+x,160+y,10,10);
+            g.fillRect(250+x,40+y,10,10);
+            g.fillRect(250+x,50+y,10,10);
+            g.fillRect(250+x,60+y,10,10);
+            g.fillRect(250+x,100+y,10,10);
+            g.fillRect(250+x,110+y,10,10);
+            g.fillRect(250+x,150+y,10,10);
+            g.fillRect(260+x,30+y,10,10);
+            g.fillRect(260+x,130+y,10,10);
+            g.fillRect(260+x,140+y,10,10);
+            g.fillRect(270+x,40+y,10,10);
+            g.fillRect(270+x,100+y,10,10);
+            g.fillRect(270+x,110+y,10,10);
+            g.fillRect(270+x,120+y,10,10);
+            g.fillRect(280+x,50+y,10,10);
+            g.fillRect(280+x,60+y,10,10);
+            g.fillRect(280+x,100+y,10,10);
+            
+
+            for ( int u = 70; u<=90; u += 10){
+                  g.fillRect(290+x,u+y,10,10); 
+            }
+
+            g.setColor(col);
+            g.fillRect(100+x,80+y,10,10);
+            g.fillRect(100+x,90+y,10,10);
+            g.fillRect(100+x,100+y,10,10);
+            for ( int z = 70; z<=110; z += 10){
+                   g.fillRect(110+x,z+y,10,10); 
+            }
+            for ( int o = 50; o<=110; o += 10){
+                   g.fillRect(120+x,o+y,10,10); 
+            }
+
+            for ( int p = 40; p<=120; p += 10){
+                   g.fillRect(130+x,p+y,10,10); 
+            }
+            for ( int j = 40; j<=70; j += 10){
+                   g.fillRect(140+x,j+y,10,10); 
+            }
+
+            g.fillRect(140+x,110+y,10,10);
+            g.fillRect(140+x,120+y,10,10);
+            
+            for ( int k = 40; k<=70; k += 10){
+                   g.fillRect(150+x,k+y,10,10); 
+            }
+
+            g.fillRect(150+x,110+y,10,10);
+            g.fillRect(150+x,120+y,10,10);
+            
+            for ( int f = 40; f<=130; f += 10){
+                   g.fillRect(160+x,f+y,10,10); 
+            }
+
+            for ( int h = 50; h<=130; h += 10){
+                   g.fillRect(170+x,h+y,10,10); 
+            }
+
+            for ( int i = 70; i<=120; i += 10){
+                   g.fillRect(180+x,i+y,10,10);  }
+
+            g.fillRect(180+x,140+y,10,10);
+            
+            for ( int d = 90; d<=170; d += 10){
+                   g.fillRect(190+x,d+y,10,10); 
+            }
+
+            for ( int b = 110; b<=190; b += 10){
+                   g.fillRect(200+x,b+y,10,10); 
+            }
+
+            for ( int c = 120; c<=170; c += 10){
+                   g.fillRect(210+x,c+y,10,10); 
+            }
+
+            
+            g.fillRect(220+x,140+y,10,10);//
+            g.fillRect(220+x,150+y,10,10);
+            g.fillRect(220+x,160+y,10,10);
+            g.fillRect(240+x,130+y,10,10);
+            g.fillRect(240+x,140+y,10,10);
+            g.fillRect(240+x,150+y,10,10);
+            g.fillRect(250+x,120+y,10,10);
+            g.fillRect(250+x,130+y,10,10);
+            g.fillRect(250+x,140+y,10,10);
+            g.fillRect(260+x,80+y,10,10);
+            g.fillRect(260+x,110+y,10,10);
+            g.fillRect(260+x,120+y,10,10);
+            g.fillRect(270+x,70+y,10,10);
+            
+            g.setColor(colo);
+            g.fillRect(150+x,140+y,10,10);
+            g.fillRect(150+x,150+y,10,10);
+            g.fillRect(160+x,140+y,10,10);
+            g.fillRect(160+x,150+y,10,10);
+            g.fillRect(160+x,160+y,10,10);
+            g.fillRect(170+x,150+y,10,10);
+            g.fillRect(170+x,160+y,10,10);
+            g.fillRect(170+x,170+y,10,10);
+            g.fillRect(180+x,160+y,10,10);
+            g.fillRect(180+x,170+y,10,10);
+            
+            g.setColor(Color.yellow);
+            g.fillRect(260+x,80+y,10,10);
+            g.fillRect(260+x,90+y,10,10);
+            g.fillRect(260+x,100+y,10,10);
+            g.fillRect(270+x,70+y,10,10);
+            g.fillRect(270+x,80+y,10,10);
+            g.fillRect(270+x,90+y,10,10);
+            
+            
+            g.setColor(Color.red);
+            g.fillRect(250+x,70+y,10,10);
+            g.fillRect(250+x,80+y,10,10);
+            g.fillRect(250+x,90+y,10,10);
+            
+            for ( int l = 40; l<=70; l += 10){
+                   g.fillRect(260+x,l+y,10,10); 
+            }
+
+            g.fillRect(270+x,50+y,10,10);
+            g.fillRect(270+x,60+y,10,10);
+            g.fillRect(280+x,70+y,10,10);
+            g.fillRect(280+x,80+y,10,10);
+            g.fillRect(280+x,90+y,10,10);
+            
+}
+
+
+    @Override
+    public void keyTyped(KeyEvent e) {
+        
+    }
+
+    @Override
+    public void keyPressed(KeyEvent e) {
+        int key = e.getKeyCode();
+        if(key == KeyEvent.VK_UP){
+            y-=10;
+            if(y<=0){
+                y=0;
+            }
+        }
+        if(key == KeyEvent.VK_DOWN){
+            y+=10;
+            if(y>=500){
+                y=500;
+            }
+            
+        }
+        if(key == KeyEvent.VK_RIGHT){
+            x+=10;
+            if(x>=500){
+                x=500;
+            }
+        }
+        if(key == KeyEvent.VK_LEFT){
+            x-=10;
+            if(x<=0){
+                x=0;
+            }
+        }
+        repaint();
+    }
+
+    @Override
+    public void keyReleased(KeyEvent e) {
+    }
+}
