@@ -5,8 +5,12 @@
  */
 package gui1;
 
-import static gui1.Activity8.name;
-import static gui1.GraphicsDemo2.name;
+/**
+ *
+ * @author m304user
+ */
+//import static gui1.Activity8.name;
+//import static gui1.GraphicsDemo2.name;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyEvent;
@@ -289,14 +293,14 @@ name = JOptionPane.showInputDialog(null, "What is your characters name: ", "Knig
         int key = e.getKeyCode();
         if(key == KeyEvent.VK_UP){
             y-=10;
-            if(y<=0){
-                y=0;
+            if(y<=-190){
+                y=getHeight()-40;
             }
         }
         if(key == KeyEvent.VK_DOWN){
             y+=10;
-            if(y>=500){
-                y=500;
+            if(y>=getHeight()-40){
+                y=-190;
             }
             
         }
