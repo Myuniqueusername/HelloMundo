@@ -1,0 +1,96 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package game;
+
+/**
+ *
+ * @author PC 06
+ */
+import java.awt.Font;
+import java.awt.Graphics2D;
+import java.awt.Rectangle;
+
+//import javax.swing.*;
+import java.awt.*;
+
+public class Ball {
+	private static final int DIAMETER = 30;
+	int x = 0;
+	int y = 0;
+	int xa = 4;
+	int ya = 2;
+        static String score =  "0";
+        static Color col = (new Color(232,83,53));
+        static Color col1 = (new Color(58,204,14));
+        static Color col2 = (new Color(186,95,11));
+        static Color col3 = (new Color(190,17,193));
+       
+	private Game game;
+
+	public Ball(Game game) {
+		this.game= game;
+	}
+
+
+	void move() {
+		if (x + xa < 0)
+			xa = 4;
+		if (x + xa > game.getWidth() - DIAMETER)
+			xa = -4;
+		if (y + ya < 0)
+			ya = 4;
+		if (y + ya > game.getHeight() - DIAMETER)
+			game.gameOver();
+		if (collision()){
+			ya = -8;
+			y = game.racket.getTopY() - DIAMETER;
+                        
+                    int result = Integer.parseInt(score);
+                    result++;
+                    this.score = String.valueOf(result);
+                        
+		}
+		x = x + xa;
+		y = y + ya;
+	}
+        
+
+	private boolean collision() {
+		return game.racket.getBounds().intersects(getBounds());
+                
+                
+	}
+
+	public void paint(Graphics2D g) {
+                if (x + xa < 0){
+                    g.setColor(col);
+                }
+                if (x + xa > game.getWidth() - DIAMETER){
+                    g.setColor(col3);
+                }
+                
+                if (y + ya < 0){
+                    g.setColor(col1);
+                }
+                if (collision()){
+                    g.setColor(col2);
+                }
+                    g.fillOval(x, y, DIAMETER, DIAMETER);
+
+                
+                
+                g.setFont(new Font("Comic Sans MS",Font.BOLD,20));
+                g.drawString("Score: ", 20, 50);
+                g.drawString(score, 100, 50);
+	}
+	
+	public Rectangle getBounds() {
+		return new Rectangle(x, y, DIAMETER, DIAMETER);
+                
+                
+	}
+       
+}
